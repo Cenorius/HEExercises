@@ -1,0 +1,516 @@
+[
+    {
+        "id": 1,
+        "title": {
+            "en": "Cross Site Scripting (XSS)",
+            "tr": "Siteler Arası Betik Çalıştırma (XSS)",
+            "fr": "Script inter-sites (XSS)",
+            "ar": ""
+        },
+        "description": {
+            "en": "It allows client-side code to be injected into web pages viewed by other users.",
+            "tr": "Diğer kullanıcılar tarafından görüntülenen web sayfalarına istemci taraflı kodun enjekte edilmesine imkân verir.",
+            "fr": "Il permet d'injecter du code côté client dans des pages Web consultées par d'autres utilisateurs.",
+            "ar": ""
+        },
+        "imgURL": "public/assets/img/vulns/xss.png",
+        "labs": [
+            {
+                "id": 1,
+                "title": {
+                    "en": "Basic Reflected",
+                    "tr": "Basic Reflected",
+                    "fr": "Base Réfléchie",
+                    "ar": ""
+                },
+                "description": {
+                    "en": "Find a way to trigger XSS via search bar.",
+                    "tr": "Arama çubuğu üzerinden XSS zafiyetinin nedenini bulunuz.",
+                    "fr": "Trouver un moyen de déclencher Xss via la barre de recherche.",
+                    "ar": ""
+                },
+                "url": "/lab/xss/basic-reflected/",
+                "vulnID": 1
+            },
+            {
+                "id": 2,
+                "title": {
+                    "en": "Basic Stored",
+                    "tr": "Basic Stored",
+                    "fr": "Base Stockée",
+                    "ar": ""
+                },
+                "description": {
+                    "en": "Find XSS vulnerability via chat. Remember that everyone can see your payload.",
+                    "tr": "Chati kullanarak stored XSS zafiyetini bul. Unutma sitedeki herkes XSS payloadını görebilir.",
+                    "fr": "Trouver la vulnérabilité Xss via le chat. N'oubliez pas que tout le monde peut voir votre Payload.",
+                    "ar": ""
+                },
+                "url": "/lab/xss/basic-stored/",
+                "vulnID": 1
+            },
+            {
+                "id": 3,
+                "title": {
+                    "en": "Basic Dom-Based",
+                    "tr": "Basic Dom-Based",
+                    "fr": "Eval basé sur le DOM",
+                    "ar": ""
+                },
+                "description": {
+                    "en": "Find XSS vulnerability.",
+                    "tr": "XSS zafiyetini bulnuz.",
+                    "fr": "Trouver la vulnérabilité via Xss.",
+                    "ar": ""
+                },
+                "url": "/lab/xss/basic-dom-based/",
+                "vulnID": 1
+            },
+            {
+                "id": 4,
+                "title": {
+                    "en": "HTML Attribute Manipulation",
+                    "tr": "HTML Özellik Manipülasyonu",
+                    "fr": "HTML Attribut Manipulation",
+                    "ar": ""
+                },
+                "description": {
+                    "en": "Find XSS vulnerability via href.",
+                    "tr": "Href üzerinden XSS'i bulunuz.",
+                    "fr": "Trouver la vulnérabilité Xss href.",
+                    "ar": ""
+                },
+                "url": "/lab/xss/html-attribute-manipulation/",
+                "vulnID": 1
+            },
+            {
+                "id": 5,
+                "title": {
+                    "en": "Welcome to Our Gallery",
+                    "tr": "Galerimize Hoş Geldiniz",
+                    "fr": "Bienvenue dans notre galerie",
+                    "ar": ""
+                },
+                "description": {
+                    "en": "Find XSS vulnerability via images.",
+                    "tr": "Resimler üzerinden XSS zafiyetini bulunuz.",
+                    "fr": "Trouver la vulnérabilité Xss via les images.",
+                    "ar": ""
+                },
+                "url": "/lab/xss/our-gallery/",
+                "vulnID": 1
+            },
+            {
+                "id": 6,
+                "title": {
+                    "en": "User Agent",
+                    "tr": "User Agent",
+                    "fr": "User Agent",
+                    "ar": ""
+                },
+                "description": {
+                    "en": "Admin logs your User-Agent data. Send a payload that only admin can see.",
+                    "tr": "Admin User Agent bilgilerini depoluyor. Attığın payloadı adminin görmesini sağla.",
+                    "fr": "L'administrateur enregistre vos données d'agent utilisateur. Envoyer un payload que l'administrateur peut voir.",
+                    "ar": ""
+                },
+                "url": "/lab/xss/user-agent/",
+                "vulnID": 1
+            },
+            {
+                "id": 7,
+                "title": {
+                    "en": "News",
+                    "tr": "Haberler",
+                    "fr": "İnformations",
+                    "ar": ""
+                },
+                "description": {
+                    "en": "You can share News with all users if you like.",
+                    "tr": "Bu sitede herkes hoşlarına giden haberleri paylaşabilir.",
+                    "fr": "Vous pouvez partagez des info avec tous les utilisateurs si vous voulez.",
+                    "ar": ""
+                },
+                "url": "/lab/xss/news/",
+                "vulnID": 1
+            },{
+                "id": 8,
+                "title": {
+                    "en": "File Upload",
+                    "tr": "Dosya Yükleme",
+                    "fr": "téléchargement de fichiers",
+                    "ar": ""
+                },
+                "description": {
+                    "en": "Find a way to trigger XSS via uploaded file.",
+                    "tr": "Yüklediğin dosya üzerinden XSS zafiyetini tetikleyin.",
+                    "fr": "Trouvez un moyen de déclencher XSS via un fichier téléchargé.",
+                    "ar": ""
+                },
+                "url": "/lab/xss/image-upload/",
+                "vulnID": 1
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": {
+            "en": "SQL Injection",
+            "tr": "SQL Enjeksiyonu",
+            "fr": "Injection SQL",
+            "ar": ""
+        },
+        "description": {
+            "en": "It is an attack technique used to attack database-based applications; where the attacker takes advantage of SQL language features and adds new SQL statements to the corresponding field on the standard application screen.",
+            "tr": "Veri tabanına dayalı uygulamalara saldırmak için kullanılan bir atak tekniğidir; burada saldırgan SQL dili özelliklerinden faydalanarak standart uygulama ekranındaki ilgili alana yeni SQL ifadelerini ekler.",
+            "fr": "Il s'agit d'une technique d'attaque utilisée pour attaquer les applications basées sur des bases de données ; où l'attaquant tire parti des fonctionnalités du langage SQL et ajoute de nouvelles instructions SQL au champ correspondant sur l'écran standard de l'application.",
+            "ar": ""
+        },
+        "imgURL": "public/assets/img/vulns/sqli.png",
+        "labs": [
+            {
+                "id": 1,
+                "title": {
+                    "en": "Login",
+                    "tr": "Giriş Yap",
+                    "fr": "Connection",
+                    "ar": ""
+                },
+                "description": {
+                    "en": "Try to login to the system.",
+                    "tr": "Sisteme giriş yapmayı deneyiniz.",
+                    "fr": "Essayez de vous connecter au système.",
+                    "ar": ""
+                },
+                "url": "/lab/sql-injection/post-login/",
+                "vulnID": 2
+            },
+            {
+                "id": 2,
+                "title": {
+                    "en": "Find the Passwords",
+                    "tr": "Şifreleri Bul",
+                    "fr": "Rechercher un enregistrement",
+                    "ar": ""
+                },
+                "description": {
+                    "en": "Access the passwords in the Database.",
+                    "tr": "Veri Tabanında bulunan şifrelere erişiniz.",
+                    "fr": "Accéder aux enregistrements de la base de données",
+                    "ar": ""
+                },
+                "url": "/lab/sql-injection/find-password/",
+                "vulnID": 2
+            },
+            {
+                "id": 3,
+                "title": {
+                    "en": "Find the Passwords case 2",
+                    "tr": "Şifreleri Bul",
+                    "fr": "Rechercher un enregistrement",
+                    "ar": ""
+                },
+                "description": {
+                    "en": "Access the passwords in the Database.",
+                    "tr": "Veri Tabanında bulunan şifrelere erişiniz.",
+                    "fr": "Accéder aux enregistrements de la base de données",
+                    "ar": ""
+                },
+                "url": "/lab/sql-injection/find-password2/",
+                "vulnID": 2
+            },
+            {
+                "id": 4,
+                "title": {
+                    "en": "Boolean-Based Blind SQL Injection",
+                    "tr": "Boolean-Based Blind SQL Injection",
+                    "fr": "Injection aveugle à base booléenne",
+                    "ar": ""
+                },
+                "description": {
+                    "en": "Use brute force to guess existing database records.",
+                    "tr": "Mevcut veritabanı kayıtlarını tahmin etmek için kaba kuvvet kullanınız.",
+                    "fr": "Utiliser la force brute pour deviner les enregistrements de base de données existants.",
+                    "ar": ""
+                },
+                "url": "/lab/sql-injection/post-blind-boolean/",
+                "vulnID": 2
+            },
+            {
+                "id": 5,
+                "title": {
+                    "en": "Error-Based Blind SQL Injection",
+                    "tr": "Error-Based Blind SQL Injection",
+                    "fr": "Injection SQL aveugle basée sur des erreurs",
+                    "ar": ""
+                },
+                "description": {
+                    "en": "Use SQL injection to find existing database records.",
+                    "tr": "Mevcut veritabanı kayıtlarını bulmak için SQL injection zafiyetini sömürünüz.",
+                    "fr": "Utilisez l'injection SQL pour rechercher des enregistrements de base de données existants.",
+                    "ar": ""
+                },
+                "url": "/lab/sql-injection/get-blind-error/",
+                "vulnID": 2
+            },
+            {
+                "id": 6,
+                "title": {
+                    "en": "Time-Based Blind SQL Injection",
+                    "tr": "Time-Based Blind SQL Injection",
+                    "fr": "Injection aveugle basée sur le temps",
+                    "ar": ""
+                },
+                "description": {
+                    "en": "Injecting a time delay to find SQL injection.",
+                    "tr": "Mevcut veritabanı kayıtlarını tahmin etmek için kaba kuvvet kullanınız.",
+                    "fr": "Injecter une temporisation",
+                    "ar": ""
+                },
+                "url": "/lab/sql-injection/post-blind-time/",
+                "vulnID": 2
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "title": {
+            "en": "File Inclusion",
+            "tr": "Dosya Dahil Etme",
+            "fr": "Inclusion de fichiers",
+            "ar": ""
+        },
+        "description": {
+            "en": "A vulnerability that allows an attacker to attach a remotely or locally hosted file, usually via a script on the web server.",
+            "tr": "Saldırganın, genellikle web sunucusundaki bir komut dosyası aracılığıyla, uzaktan veya yerel olarak barındırılan bir dosya eklemesine olanak tanıyan güvenlik açığıdır.",
+            "fr": "Une vulnérabilité qui permet à un attaquant de joindre un fichier hébergé à distance ou localement, généralement via un script sur le serveur Web.",
+            "ar": ""
+        },
+        "imgURL": "public/assets/img/vulns/lfi.png",
+        "labs": [
+            {
+                "id": 1,
+                "title": {
+                    "en": "Learn the Capital 1",
+                    "tr": "Başkent Öğrenme 1",
+                    "fr": "Savoir la Capitale 1",
+                    "ar": ""
+                },
+                "description": {
+                    "en": "Access the admin page without permission.",
+                    "tr": "Yönetici sayfasına izinsiz erişiniz.",
+                    "fr": "Accéder à la page de l’administrateur sans permission.",
+                    "ar": ""
+                },
+                "url": "/lab/file-inclusion/learn-the-capital-1/",
+                "vulnID": 6
+            },
+            {
+                "id": 2,
+                "title": {
+                    "en": "Learn the Capital 2",
+                    "tr": "Başkent Öğrenme 2",
+                    "fr": "Savoir la Capitale 2",
+                    "ar": ""
+                },
+                "description": {
+                    "en": "We have taken some security measures. Let's see if you can access the admin page without permission.",
+                    "tr": "Bazı güvenlik önlemleri aldık. Bakalım yönetici sayfasına izinsiz erişebilecek misin.",
+                    "fr": "Nous avons pris quelques mesures de sécurité. Voyons si vous pouvez accéder a la page Admin sans permission.",
+                    "ar": ""
+                },
+                "url": "/lab/file-inclusion/learn-the-capital-2/",
+                "vulnID": 6
+            },
+            {
+                "id": 3,
+                "title": {
+                    "en": "Learn the Capital 3",
+                    "tr": "Başkent Öğrenme 3",
+                    "fr": "Savoir la Capitale 3",
+                    "ar": ""
+                },
+                "description": {
+                    "en": "We have increased our security measures. Now it's not easy to access the admin page :)",
+                    "tr": "Güvenlik önlemlerimizi artırdık. Artık yönetici sayfasına erişmen çok da kolay değil :)",
+                    "fr": "Nous avons pris quelques mesures de sécurité. Maintenant c’est simple d’accéder a la page de l’administrateur.",
+                    "ar": ""
+                },
+                "url": "/lab/file-inclusion/learn-the-capital-3/",
+                "vulnID": 6
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "title": {
+            "en": "Unrestricted File Upload",
+            "tr": "Kısıtlamasız Dosya Yükleme",
+            "fr": "Téléchargement de fichiers illimité",
+            "ar": ""
+        },
+        "description": {
+            "en": "It is a security vulnerability that occurs as a result of the inability to fully control the files received from the user and may result in remote code execution on the server.",
+            "tr": "Kullanıcıdan alınan dosyaların tam olarak kontrol edilememesi sonucu ortaya çıkan ve sunucu üzerinde uzaktan kod çalıştırma ile sonuçlanabilecek bir güvenlik açığıdır.",
+            "fr": "Il s'agit d'une vulnérabilité de sécurité qui se produit en raison de l'incapacité de contrôler entièrement les fichiers reçus de l'utilisateur et peut entraîner l'exécution de code à distance sur le serveur.",
+            "ar": ""
+        },
+        "imgURL": "public/assets/img/vulns/upload.png",
+        "labs": [
+            {
+                "id": 1,
+                "title": {
+                    "en": "Unrestricted",
+                    "tr": "Kısıtlamasız",
+                    "fr": "İllimité",
+                    "ar": ""
+                },
+                "description": {
+                    "en": "Upload disallowed file type.",
+                    "tr": "İzin verilmeyen dosya türü yükleyin.",
+                    "fr": "Télécharger un type de fichier non autorisé.",
+                    "ar": ""
+                },
+                "url": "/lab/file-upload/unrestricted/",
+                "vulnID": 7
+            },
+            {
+                "id": 2,
+                "title": {
+                    "en": "MIME Type",
+                    "tr": "MIME Tipi",
+                    "fr": "Type MIME",
+                    "ar": ""
+                },
+                "description": {
+                    "en": "Upload disallowed file type, bypassing MIME type checking.",
+                    "tr": "MIME tip kontrolünü atlayarak, izin verilmeyen dosya türü yükleyin.",
+                    "fr": "Télécharger un type de fichier non autorisé, en contournant la vérification magique de l'en-tête.",
+                    "ar": ""
+                },
+                "url": "/lab/file-upload/mime-type/",
+                "vulnID": 7
+            },
+            {
+                "id": 3,
+                "title": {
+                    "en": "Magic Header",
+                    "tr": "Magic Header",
+                    "fr": "En-tête magique",
+                    "ar": ""
+                },
+                "description": {
+                    "en": "Upload disallowed file type, bypassing the magic header check.",
+                    "tr": "Magic Header kontrolünü atlayarak, izin verilmeyen dosya türü yükleyin.",
+                    "fr": "Téléchargez un type de fichier non autorisé, en contournant la vérification magique de l'en-tête.",
+                    "ar": ""
+                },
+                "url": "/lab/file-upload/magic-header/",
+                "vulnID": 7
+            },
+            {
+                "id": 4,
+                "title": {
+                    "en": "Blacklist 1",
+                    "tr": "Kara Liste 1",
+                    "fr": "Liste noire 1",
+                    "ar": ""
+                },
+                "description": {
+                    "en": "Upload disallowed file type, bypassing the blacklist check.",
+                    "tr": "Kara liste kontrolünü atlayarak, izin verilmeyen dosya türü yükleyin.",
+                    "fr": "Télécharger un type de fichier non autorisé, en contournant la magie de la vérification de la liste noire.",
+                    "ar": ""
+                },
+                "url": "/lab/file-upload/blacklist-1/",
+                "vulnID": 7
+            },
+            {
+                "id": 5,
+                "title": {
+                    "en": "Blacklist 2 ",
+                    "tr": "Kara Liste 2",
+                    "fr": "Liste noire 2",
+                    "ar": ""
+                },
+                "description": {
+                    "en": "Upload disallowed file type, bypassing the blacklist check.",
+                    "tr": "Kara liste kontrolünü atlayarak, izin verilmeyen dosya türü yükleyin.",
+                    "fr": "Télécharger un type de fichier non autorisé, en contournant la magie de la vérification de la liste noire.",
+                    "ar": ""
+                },
+                "url": "/lab/file-upload/blacklist-2/",
+                "vulnID": 7
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "title": {
+            "en": "Cross Site Request Forgery (CSRF)",
+            "tr": "Siteler Arası İstek Sahteciliği (CSRF)",
+            "fr": "Contrefaçon de demande intersites (CSRF)",
+            "ar": ""
+        },
+        "description": {
+            "en": "Is an attack vector that tricks a web browser into executing an unwanted action in an application to which a user is logged in.",
+            "tr": "Bir web tarayıcısını, kullanıcının oturum açtığı bir uygulamada istenmeyen bir eylemi yürütmesi için kandıran bir saldırı vektörüdür.",
+            "fr": "Est un vecteur d'attaque qui incite un navigateur Web à exécuter une action indésirable dans une application à laquelle un utilisateur est connecté.",
+            "ar": ""
+        },
+        "imgURL": "public/assets/img/vulns/csrf.png",
+        "labs": [
+            {
+                "id": 1,
+                "title": {
+                    "en": "Changing Password",
+                    "tr": "Parola Değiştirme",
+                    "fr": "Changer le mot de passe",
+                    "ar": ""
+                },
+                "description": {
+                    "en": "Change the password of the admin account without permission.",
+                    "tr": "Admin hesabının parolasını izinsiz değiştirin.",
+                    "fr": "Changer le mot de passe du compte de l’administrateur sans permission",
+                    "ar": ""
+                },
+                "url": "/lab/csrf/changing-password/",
+                "vulnID": 8
+            },
+            {
+                "id": 2,
+                "title": {
+                    "en": "Money Transfer",
+                    "tr": "Para Transferi",
+                    "fr": "Transfère d’Argent",
+                    "ar": ""
+                },
+                "description": {
+                    "en": "Transfer money from admin account to user account without permission.",
+                    "tr": "Admin hesabından user hesabına izinsiz para transferi yapın.",
+                    "fr": "Transférer d’argent du compte de l’administrateur au compte de l’utilisateur sans permission",
+                    "ar": ""
+                },
+                "url": "/lab/csrf/money-transfer/",
+                "vulnID": 8
+            },
+            {
+                "id": 3,
+                "title": {
+                    "en": "Follow",
+                    "tr": "Perform unauthorized following from the admin account.",
+                    "fr": "Suivre",
+                    "ar": ""
+                },
+                "description": {
+                    "en": "Takip Et",
+                    "tr": "Admin hesabından izinsiz takip etme işlemi gerçekleştirin.",
+                    "fr": "Effectuer un suivi non autorisé à partir du compte administrateur",
+                    "ar": ""
+                },
+                "url": "/lab/csrf/follow/",
+                "vulnID": 8
+            }
+        ]
+    }
+]
