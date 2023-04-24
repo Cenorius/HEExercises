@@ -41,6 +41,7 @@ $strings = tr();
     include('dependencies/dbConnect.php');   
 
     global $mysqli;
+    session_start();
 
 ?> 
     <main>
@@ -51,8 +52,16 @@ $strings = tr();
    
     <div class="row">
       
-        <form class="form-inline" method="GET">
-          <select class="form-select w-auto d-inline" name="col">
+        <form class="form-inline" method="POST">
+        
+        <?php
+          $lastToken=$_SESSION['token'];
+          
+          $_SESSION['token'] = md5(uniqid(mt_rand(), true));
+          echo '<input type="hidden" name="tokenDecorativo" value="'.$_SESSION['token'].'">';
+        ?>
+
+        <select class="form-select w-auto d-inline" name="col">
             <option>Selecciona un campo</option>
             <option>id</option>
             <option>Username</option>
@@ -83,15 +92,25 @@ $strings = tr();
                 <tbody> <?php
 
                                             
-                                            $param=$_GET['col'];
+                                            $param=$_POST['col'];
+                                            $token = filter_input(INPUT_POST, 'tokenDecorativo', FILTER_SANITIZE_STRING);
+
                                             if(isset($param) and $param != "")
                                             {
+                                              
+                                              if(!$token || $token!==$lastToken){
+                                                echo "<p>CSRF no valido<p>";
+                                                echo "<p>Actual: ". $token." Esperado:".$lastToken."<p>";
+                                                header($_SERVER['SERVER_PROTOCOL'] . ' CSRF no validado');
+                                                exit;
+                                              }
+                                              
                                               $param=strtolower($param);
                                               
                                               //if(str_contains($param,"and") or str_contains($param,"union") or str_contains($param,"delay"))
                                                // exit();
 
-                                              $query = $mysqli->query("SELECT * FROM users WHERE (`".$param."`)= (SELECT `".$param."` FROM users ORDER BY ".$param." LIMIT 1)") ;
+                                               $query = $mysqli->query("SELECT * FROM users WHERE ".$param."= (SELECT ".$param." FROM users ORDER BY ".$param." LIMIT 1)") ;
                                                 
                                                 
                                                 while($list = $query->fetch_array())
