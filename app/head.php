@@ -21,8 +21,8 @@
   <main class="main" id="top">
     <!-- NAV START -->
     <nav class="navbar navbar-light sticky-top" data-navbar-darken-on-scroll="900">
-      <div class="container"><a class="navbar-brand" href=""> <img
-            src="/public/assets/img/gallery/logo.png" alt="..." /></a>
+      <div class="container"><a class="navbar-brand" href=""> 
+        <img src="/public/assets/img/gallery/logo.png" alt="..." /></a>
         <div class="navbar-nav ms-auto">
         <div class="dropdown">
   <button class="btn btn-secondary dropdown-toggle d-flex align-items-center" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">

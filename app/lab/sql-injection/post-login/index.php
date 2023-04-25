@@ -101,7 +101,7 @@ print($mysqli->error);
 			</div>
 		</div>
 	</section>
-	<script id="VLBar" title="<?= $strings['title'] ?>" category-id="2" src="/public/assets/js/vlnav.min.js"></script>
+	<script id="VLBar" title="<?= $strings['title'] ?>" category-id="2" src="/public/assets/js/vlnav.js"></script>
 	<script src="js/login.js"></script>
 </body>
 </html>

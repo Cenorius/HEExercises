@@ -12,7 +12,7 @@ if (!isset($_SESSION['username'])) {
 
 ?>
 <!DOCTYPE html>
-<html lang="en"
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -43,7 +43,7 @@ if (!isset($_SESSION['username'])) {
                     </div>
                     <div class="col-sm-8 bg-white rounded-right">
                         <h3 class="mt-3 text-center">Información</h3>
-                        <hr class="badge-primary mt-0 w-25">
+                        <hr class="badge-success mt-0 w-25">
                         <div class="row">
                             <div class="col-sm-6">
                                 <p class="font-weight-bold">Email:</p>
@@ -55,7 +55,7 @@ if (!isset($_SESSION['username'])) {
                             </div>
                         </div>
                         <h4 class="mt-3">Projectos</h4>
-                        <hr class="bg-primary">
+                        <hr class="bg-success">
                         <div class="row">
                             <div class="col-sm-6">
                                 <p class="font-weight-bold">Reciente:</p>
@@ -66,15 +66,15 @@ if (!isset($_SESSION['username'])) {
                                 <h6 class="text-muted">FLAG{b13nv3N1DOs_parDi110s}</h6>
                             </div>
                         </div>
-                        <hr class="bg-primary">
+                        <hr class="bg-success">
                         <ul class="list-unstyled d-flex justify-content-center mt-4">
-                            <li><a href="#"><i class="fab fa-facebook-f px-3 h4 text-info"></i></a></li>
-                            <li><a href="#"><i class="fab fa-youtube px-3 h4 text-info"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter px-3 h4 text-info"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook-f px-3 h4 text-success"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube px-3 h4 text-success"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter px-3 h4 text-success"></i></a></li>
                         </div>
                 </div>
                 <div class="logout mt-3 d-flex justify-content-center">
-                <a href="index.php" class="btn btn-info btn-lg">
+                <a href="index.php" class="btn btn-success btn-lg">
           <span class="glyphicon glyphicon-log-out"></span> Log out
         </a>
                 
@@ -88,7 +88,7 @@ if (!isset($_SESSION['username'])) {
 
 
     </div>
-    <script id="VLBar" title="<?= $strings['title'] ?>" category-id="2" src="/public/assets/js/vlnav.min.js"></script>
+    <script id="VLBar" title="<?= $strings['title'] ?>" category-id="2" src="/public/assets/js/vlnav.js"></script>
     
     
 </body>
