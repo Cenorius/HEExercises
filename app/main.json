@@ -216,11 +216,96 @@
                     "fr": "Accéder aux enregistrements de la base de données",
                     "ar": ""
                 },
-                "url": "/lab/sql-injection/find-password2/",
+                "url": "/lab/sql-injection/find-password-2-Post/",
                 "vulnID": 2
             },
             {
                 "id": 4,
+                "title": {
+                    "en": "Find the Passwords case 2",
+                    "tr": "Şifreleri Bul",
+                    "fr": "Rechercher un enregistrement",
+                    "ar": ""
+                },
+                "description": {
+                    "en": "Access the passwords in the Database.",
+                    "tr": "Veri Tabanında bulunan şifrelere erişiniz.",
+                    "fr": "Accéder aux enregistrements de la base de données",
+                    "ar": ""
+                },
+                "url": "/lab/sql-injection/find-password-3-Cookie/",
+                "vulnID": 2
+            },
+            {
+                "id": 5,
+                "title": {
+                    "en": "Find the Passwords case 2",
+                    "tr": "Şifreleri Bul",
+                    "fr": "Rechercher un enregistrement",
+                    "ar": ""
+                },
+                "description": {
+                    "en": "Access the passwords in the Database.",
+                    "tr": "Veri Tabanında bulunan şifrelere erişiniz.",
+                    "fr": "Accéder aux enregistrements de la base de données",
+                    "ar": ""
+                },
+                "url": "/lab/sql-injection/find-password-4-Json/",
+                "vulnID": 2
+            },
+            {
+                "id": 6,
+                "title": {
+                    "en": "Find the Passwords case 2",
+                    "tr": "Şifreleri Bul",
+                    "fr": "Rechercher un enregistrement",
+                    "ar": ""
+                },
+                "description": {
+                    "en": "Access the passwords in the Database.",
+                    "tr": "Veri Tabanında bulunan şifrelere erişiniz.",
+                    "fr": "Accéder aux enregistrements de la base de données",
+                    "ar": ""
+                },
+                "url": "/lab/sql-injection/find-password-5-OR/",
+                "vulnID": 2
+            },
+            {
+                "id": 7,
+                "title": {
+                    "en": "Find the Passwords case 2",
+                    "tr": "Şifreleri Bul",
+                    "fr": "Rechercher un enregistrement",
+                    "ar": ""
+                },
+                "description": {
+                    "en": "Access the passwords in the Database.",
+                    "tr": "Veri Tabanında bulunan şifrelere erişiniz.",
+                    "fr": "Accéder aux enregistrements de la base de données",
+                    "ar": ""
+                },
+                "url": "/lab/sql-injection/find-password-6-Boundaries/",
+                "vulnID": 2
+            },
+            {
+                "id": 8,
+                "title": {
+                    "en": "Find the Passwords case 2",
+                    "tr": "Şifreleri Bul",
+                    "fr": "Rechercher un enregistrement",
+                    "ar": ""
+                },
+                "description": {
+                    "en": "Access the passwords in the Database.",
+                    "tr": "Veri Tabanında bulunan şifrelere erişiniz.",
+                    "fr": "Accéder aux enregistrements de la base de données",
+                    "ar": ""
+                },
+                "url": "/lab/sql-injection/find-password-7-CSRF/",
+                "vulnID": 2
+            },
+            {
+                "id": 9,
                 "title": {
                     "en": "Boolean-Based Blind SQL Injection",
                     "tr": "Boolean-Based Blind SQL Injection",
@@ -237,7 +322,7 @@
                 "vulnID": 2
             },
             {
-                "id": 5,
+                "id": 10,
                 "title": {
                     "en": "Error-Based Blind SQL Injection",
                     "tr": "Error-Based Blind SQL Injection",
@@ -254,7 +339,7 @@
                 "vulnID": 2
             },
             {
-                "id": 6,
+                "id": 11,
                 "title": {
                     "en": "Time-Based Blind SQL Injection",
                     "tr": "Time-Based Blind SQL Injection",
