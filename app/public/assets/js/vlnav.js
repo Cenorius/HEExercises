@@ -132,7 +132,7 @@ headerEl.appendChild(headerWrapperEl);
 var logoEl = document.createElement('div');
 logoEl.innerHTML =`
     <a href="/index.php">
-        <img src="/public/assets/img/gallery/logo.png" alt="Vulnlab-Logo">
+        <img src="/public/assets/img/gallery/logo.png" alt="Logo" style="height:5rem">
     </a>
 `
 headerWrapperEl.appendChild(logoEl);
