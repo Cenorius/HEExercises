@@ -307,6 +307,23 @@
             {
                 "id": 9,
                 "title": {
+                    "en": "Find the Passwords case 2",
+                    "tr": "Şifreleri Bul",
+                    "fr": "Rechercher un enregistrement",
+                    "ar": ""
+                },
+                "description": {
+                    "en": "Access the passwords in the Database.",
+                    "tr": "Veri Tabanında bulunan şifrelere erişiniz.",
+                    "fr": "Accéder aux enregistrements de la base de données",
+                    "ar": ""
+                },
+                "url": "/lab/sql-injection/find-password-7-CSRF/",
+                "vulnID": 2
+            },
+            {
+                "id": 10,
+                "title": {
                     "en": "Boolean-Based Blind SQL Injection",
                     "tr": "Boolean-Based Blind SQL Injection",
                     "fr": "Injection aveugle à base booléenne",
@@ -322,7 +339,7 @@
                 "vulnID": 2
             },
             {
-                "id": 10,
+                "id": 11,
                 "title": {
                     "en": "Error-Based Blind SQL Injection",
                     "tr": "Error-Based Blind SQL Injection",
@@ -339,7 +356,7 @@
                 "vulnID": 2
             },
             {
-                "id": 11,
+                "id": 12,
                 "title": {
                     "en": "Time-Based Blind SQL Injection",
                     "tr": "Time-Based Blind SQL Injection",
