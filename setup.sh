@@ -30,3 +30,9 @@ chown -R www-data:www-data /var/www/html
 rm /var/www/html/index.html
 cp -R app/* /var/www/html/
 
+mysql -u root -e "CREATE DATABASE sql_injection;"
+mysql -u root sql_injection < /var/www/html/lab/sql-injection/dump.sql
+mysql -u root -e "CREATE USER 'sql_injection'@'localhost' IDENTIFIED BY '';"
+mysql -u root -e "GRANT ALL PRIVILEGES ON * . * TO 'sql_injection'@'localhost';"
+
+
