@@ -52,7 +52,8 @@ const headerElStyle = `
     font-size: 1rem;
     margin:0;
     padding: 0;
-    background-color: rgb(7, 14, 39);
+    background: rgb(39,175,0);
+    background: linear-gradient(135deg, rgba(39,175,0,1) 0%, rgba(167,154,0,1) 100%);
     border-bottom: 1px solid rgb(22, 32, 68);
     width: 100%;
     position: sticky;
@@ -164,7 +165,7 @@ btnCategoryEl.onclick = () => {
     window.location.href = `/vuln/${CategoryID}`;
 }
 
-var btnSourceCodeEl= document.createElement("div")
+/*var btnSourceCodeEl= document.createElement("div")
 btnSourceCodeEl.style.cssText=btnStyle;
 btnSourceCodeEl.style.marginRight = "15px";
 btnSourceCodeEl.innerHTML = `
@@ -242,4 +243,4 @@ languages.forEach(lang => {
     }
     dropdownListEl.appendChild(dropdownListItemEl);
 })
-
+*/
