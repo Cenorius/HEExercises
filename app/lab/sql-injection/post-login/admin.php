@@ -34,7 +34,7 @@ if (!isset($_SESSION['username'])) {
                 <div class="row z-depth-3">
                     <div class="col-sm-4 bg-info rounded-left">
                         <div class="card-blok text-center text-white">
-                            <i class="fas fa-user-tie fa-7x mt-5"></i>
+                            <img src="../../../public/assets/img/profile/bob.png" class="img-fluid">
                             <h2 class="font-weight-bold mt-4">LeBron James </h2>
                             <p> Web Designer </p>
                             <i class="far fa-edit fa-7x mt-4"></i>
