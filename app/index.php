@@ -45,23 +45,7 @@ $data = json_decode($Raw_Json,true);
         <!-- end of .container-->
       </section>
       <!-- <section> close ============================-->
-      <!-- <section> begin ============================-->
-        <section>
-
-          <div class="container">
-            <div class="py-md-3">
-              <hr class="mt-1 text-1000" />
-            </div>
-
-            <div class="row mx-md-5 px-md-5 d-flex justify-content-evenly">
-                  <div class="col-6 col-lg-auto mt-5 mt-lg-0"><img src="public/assets/img/gallery/brands/sibervatangray.png" alt="Yavuzlar" style="height:35px;" /></div>
-                  <div class="col-4 col-lg-auto mt-5 mt-lg-0"><img src="public/assets/img/gallery/brands/cyropslogo.png" alt="Cyrops" style="height:35px;" /></div>
-                  <div class="col-6 col-lg-auto mt-5 mt-lg-0"><img src="public/assets/img/gallery/brands/yavuzlargray.png" alt="Siber Vatan" style="height:35px;" /></div>
-             </div>
-          </div>
-          <!-- end of .container-->
-        </section>
-        <!-- <section> close ============================-->
+      
         <!-- ============================================-->
 <?php
   require "./footer.php";
