@@ -36,3 +36,9 @@ mysql -u root -e "CREATE USER 'sql_injection'@'localhost' IDENTIFIED BY '';"
 mysql -u root -e "GRANT ALL PRIVILEGES ON * . * TO 'sql_injection'@'localhost';"
 
 
+#<directory /var/www/html>
+#                RewriteEngine  on
+#                RewriteRule ^(lab)($|/) - [L]
+#                RewriteRule ^(vuln)/([0-9]+)$ vuln.php?&id=$2 [L,QSA]
+#        </directory>
+
