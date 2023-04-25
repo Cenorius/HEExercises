@@ -26,43 +26,44 @@ if (!isset($_SESSION['username'])) {
 <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
 <!-- Material Design Bootstrap -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="../../../public/assets/css/custom-theme.css">
 </head>
 <body class="bg-light">
     <div class="container">
         <div class="row d-flex justify-content-center">
             <div class="col-md-10 mt-5 pt-5">
                 <div class="row z-depth-3">
-                    <div class="col-sm-4 bg-info rounded-left">
+                    <div class="col-sm-4 rounded-left gradient-custom ">
                         <div class="card-blok text-center text-white">
                             <img src="../../../public/assets/img/profile/bob.png" class="img-fluid">
-                            <h2 class="font-weight-bold mt-4">LeBron James </h2>
-                            <p> Web Designer </p>
-                            <i class="far fa-edit fa-7x mt-4"></i>
+                            <h2 class="font-weight-bold mt-4">Bob Dobalina</h2>
+                            <p> Agente No-Infiltrado</p>
                         </div>
                     </div>
                     <div class="col-sm-8 bg-white rounded-right">
-                        <h3 class="mt-3 text-center">Information</h3>
+                        <h3 class="mt-3 text-center">Información</h3>
                         <hr class="badge-primary mt-0 w-25">
                         <div class="row">
                             <div class="col-sm-6">
                                 <p class="font-weight-bold">Email:</p>
-                                <h6 class="text-muted">laburanjames@gmail.com</h6>
+                                <h6 class="text-muted">bobDobalina@iesmartinezm.es</h6>
                             </div>
                             <div class="col-sm-6">
                                 <p class="font-weight-bold">Phone:</p>
                                 <h6 class="text-muted">+90 999 999 99 99</h6>
                             </div>
                         </div>
-                        <h4 class="mt-3">Projects</h4>
+                        <h4 class="mt-3">Projectos</h4>
                         <hr class="bg-primary">
                         <div class="row">
                             <div class="col-sm-6">
-                                <p class="font-weight-bold">Recent:</p>
-                                <h6 class="text-muted">Basketball Team</h6>
+                                <p class="font-weight-bold">Reciente:</p>
+                                <h6 class="text-muted">Inculpar a una panda</h6>
                             </div>
                             <div class="col-sm-6">
-                                <p class="font-weight-bold">Best Score</p>
-                                <h6 class="text-muted">Undifined</h6>
+                                <p class="font-weight-bold">Exito</p>
+                                <h6 class="text-muted">FLAG{b13nv3N1DOs_parDi110s}</h6>
                             </div>
                         </div>
                         <hr class="bg-primary">
