@@ -4,7 +4,7 @@
         "id": "1",
         "lab": "xss",
         "res": {
-            "1": "https://brutelogic.com.br/blog/testing-for-xss-like-a-knoxss/",
+            "1": "https://github.com/s0md3v/XSStrike",
             "2": "https://www.acunetix.com/websitesecurity/cross-site-scripting/",
             "3": "https://book.hacktricks.xyz/pentesting-web/xss-cross-site-scripting",
             "4": "https://cobalt.io/blog/a-pentesters-guide-to-cross-site-scripting-xss"
@@ -14,8 +14,8 @@
         "id": "2",
         "lab": "sql",
         "res": {
-            "1": "https://www.netsparker.com/blog/web-security/sql-injection-vulnerability/",
-            "2": "https://www.neuralegion.com/blog/sql-injection-payloads/",
+            "1": "https://www.hackingarticles.in/database-penetration-testing-using-sqlmap-part-1/",
+            "2": "https://github.com/sqlmapproject/sqlmap",
             "3": "https://github.com/payloadbox/sql-injection-payload-list"
         }
     },
