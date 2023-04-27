@@ -18266,7 +18266,7 @@ label {
   width: 50rem;
   padding: 0.5rem 0;
   border-radius: 1rem;
-  background-color: #162044;
+  background-color: #1e4300;
   
 /*   box-shadow: 0 0 5rem lightgrey; */
 }
@@ -18287,7 +18287,7 @@ label {
   align-items: center;
   width: 100%;
   padding: 0.2rem 0.9rem;
-  background-color: #162044;
+  background-color: inherit;
   border: none;
   outline: none;
   color: var(--color-text);
@@ -18300,13 +18300,13 @@ label {
 }
 .accordion__btn:hover {
   color: var(--color-purple);
-  background-color: #162044;
+  background-color: #1e4300;
 }
 
 .accordion__item--active .accordion__btn {
   color: var(--color-purple);
   border-bottom: 2px solid var(--color-purple);
-  background-color: #162044;
+  background-color: #1e4300;
 }
 
 .fa-lightbulb {

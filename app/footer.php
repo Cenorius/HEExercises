@@ -1,16 +1,15 @@
-<!-- <section> begin ============================-->
-<section class="bg-secondary">
-    <div class="container">
-        <div class="row">
-            
-        </div>
-    </div>
-    <!-- end of .container-->
-</section>
-<!-- <section> close ============================-->
-</main>
-<!--    End of Main Content-->
 
+</main>
+
+<!--    End of Main Content-->
+<!-- <section> begin ============================-->
+<footer class="row footer">
+    <div class="col">
+
+    </div>
+
+</footer>
+<!-- <section> close ============================-->
 
 <!--    JavaScripts START-->
 <script src="/public/vendors/@popperjs/popper.min.js"></script>

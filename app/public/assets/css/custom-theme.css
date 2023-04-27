@@ -15,7 +15,13 @@
     background: linear-gradient(135deg, rgba(39,175,0,1) 0%, rgba(167,154,0,1) 100%) !important;
 }
 
-.main-background{
+html{
+  height: 100%;
+
+}
+
+body{
+  height: 100%;
   background: rgb(8, 35, 0);
   
 }
@@ -23,3 +29,9 @@
 .border-items{
   border-color: #005e0a !important
 }
+
+.footer{
+  height:12.5%;
+  background: rgb(12, 49, 0);
+}
+

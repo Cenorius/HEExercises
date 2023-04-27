@@ -21,7 +21,8 @@
 </head>
 
 <body>
-  <main class="main main-background" id="top">
+
+ <div class="row">
     <!-- NAV START -->
     <nav class="navbar navbar-light sticky-top" data-navbar-darken-on-scroll="900">
       <div class="container"><a class="navbar-brand" href=""> 
@@ -45,5 +46,6 @@
         </div>
       </div>
     </nav>
-
+</div>
+ <main class="row main main-background" id="top">
         <!-- NAV END -->

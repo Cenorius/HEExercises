@@ -33,14 +33,9 @@ require_once("head.php")
               <button class="accordion__btn">
           
                 <span class="accordion__caption"><i class="far fa-lightbulb"></i><?php 
-                    if ($lang == "tr"){
-                      echo 'Öğrenmek İçin Kaynaklar';
-                    }elseif ($lang =="en"){
-                      echo 'Sources to Learn.';
-                    }else {
-                      echo 'Sources pour apprendre.';
-                    }
-                    ?></span>
+                    echo "Referencias"
+                    ?>
+                    </span>
                 <span class="accordion__icon"><i class="fa fa-plus"></i></span>
               </button>
           
@@ -80,7 +75,7 @@ require_once("head.php")
               <div class="row mb-3">
                 <div class="col-md-12">
                 <a href="<?=$lab['url'] ?>" class="text-decoration-none text-muted">
-                  <div class="border rounded-1 border-700 h-100 features-items">
+                  <div class="border rounded-1 border-items h-100 features-items">
                     <div class="p-4">
                       <h3 class="lh-base"><?= $lab["title"][$lang] ?></h3>
                       <p class="mb-0"><?= $lab["description"][$lang] ?></p>
