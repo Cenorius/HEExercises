@@ -18253,7 +18253,7 @@ label {
 }
 
 .features-items:hover, .features-items:focus {
-  background-color: #081131 !important;
+  background: rgb(18, 75, 0) !important;
 }
 
 /*-----------------------------------------------

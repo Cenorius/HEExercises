@@ -29,11 +29,11 @@ $data = json_decode($Raw_Json,true);
           <?php foreach ($data as $key=> $val) { ?>
             <div class="col-md-6 mb-4">
               <a href="/vuln/<?=$val['id'] ?>" class="text-decoration-none text-muted">
-              <div class=" border rounded-1 border-700 h-100 features-items">
+              <div class=" border border-items rounded-1 h-100 features-items">
                 <div class="p-5">
-                <img src="<?=$val['imgURL']; ?>" alt="Dashboard" style="width:48px;height:48px;" />
+                <img src="<?=$val['imgURL']; ?>" alt="Dashboard" />
                   <h3 class="pt-3 lh-base" ><?=$val['title'][$lang]; ?>
-                  <span class="badge bg-secondary"><?=count($val["labs"]); ?> lab</span>
+                  <span class="badge bg-success"><?=count($val["labs"]); ?> lab</span>
                   </h3>
                   <p class="mb-0"><?=$val['description'][$lang]; ?></p>
                 </div>

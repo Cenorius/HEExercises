@@ -13,9 +13,11 @@
   <link rel="stylesheet" crossorigin="anonymous"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
     integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==">
-  <link href="/public/assets/css/theme.css" rel="stylesheet" />
+  
   <link href="/public/vendors/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="../../../public/assets/css/custom-theme.css">
+  
+  <link href="/public/assets/css/theme.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/public/assets/css/custom-theme.css">
 </head>
 
 <body>
