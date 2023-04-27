@@ -57,7 +57,6 @@ print($mysqli->error);
 			outline:none;
 			height:50px;
 			width:100%;
-			background-color:#4285F4;
 			color:white;
 			border-radius:4px;
 			font-weight:bold;
@@ -86,7 +85,7 @@ print($mysqli->error);
 									<input type="password" name="password" class="form-control" placeholder="********">								    
 								</div>
 								<div class="mb-3">									
-									<button type="submit" class="btn"><?php echo $strings['title3'] ?></button>
+									<button type="submit" class="btn btn-success"><?php echo $strings['title3'] ?></button>
 								</div>								
 							</form>
 						</div>
