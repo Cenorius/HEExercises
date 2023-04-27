@@ -11,6 +11,11 @@
 
 
 .gradient-navbar{
-    background: rgb(39,175,0);
-    background: linear-gradient(135deg, rgba(39,175,0,1) 0%, rgba(167,154,0,1) 100%);
+    background: rgb(39,175,0) !important;
+    background: linear-gradient(135deg, rgba(39,175,0,1) 0%, rgba(167,154,0,1) 100%) !important;
+}
+
+.main-background{
+  background: rgb(13, 61, 0);
+
 }
