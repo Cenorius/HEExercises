@@ -154,25 +154,29 @@ btnCategoryEl.style.marginRight = "15px";
 btnCategoryEl.innerHTML = `
 <img style="width: 15px; margin-right:5px;" src="/public/assets/img/back.png" > ${translate["goBack"][selectedLanguage.code]}
 `
+btnCategoryEl.style.backgroundColor="rgb(32, 120, 0)";
+
 btnCategoryEl.onmouseover = () => {
-    btnCategoryEl.style.backgroundColor = "#131b3a";
+    btnCategoryEl.style.backgroundColor = "rgb(41, 148, 2)";
+    
 }
 btnCategoryEl.onmouseleave = () => {
-    btnCategoryEl.style.backgroundColor = "#162044";
+    btnCategoryEl.style.backgroundColor = "rgb(32, 120, 0)";
 }
 
 btnCategoryEl.onclick = () => {
     window.location.href = `/vuln/${CategoryID}`;
 }
-
-/*var btnSourceCodeEl= document.createElement("div")
+headerRight.appendChild(btnCategoryEl);
+/*
+var btnSourceCodeEl= document.createElement("div")
 btnSourceCodeEl.style.cssText=btnStyle;
 btnSourceCodeEl.style.marginRight = "15px";
 btnSourceCodeEl.innerHTML = `
 <img style="width: 15px; margin-right:5px;" src="/public/assets/img/source.png" > ${translate["sourceC"][selectedLanguage.code]}
 `
 btnSourceCodeEl.onmouseover = () => {
-    btnSourceCodeEl.style.backgroundColor = "#131b3a";
+    btnSourceCodeEl.style.backgroundColor = "rgb(57, 139, 0);";
 }
 btnSourceCodeEl.onmouseleave = () => {
     btnSourceCodeEl.style.backgroundColor = "#162044";
@@ -190,9 +194,10 @@ btnSourceCodeEl.onclick = () =>{
     pop.focus();
 }
 
-headerRight.appendChild(btnCategoryEl);
-headerRight.appendChild(btnSourceCodeEl)
 
+headerRight.appendChild(btnSourceCodeEl)
+*/
+/*
 var langEl = document.createElement('div');
 headerRight.appendChild(langEl);
 
@@ -220,7 +225,8 @@ btnLangEl.onclick = () => {
         dropdownListEl.style.display = "none";
     }
 }
-
+*/
+/*
 dropdownEl.appendChild(btnLangEl);
 
 var dropdownListEl = document.createElement('ul');
