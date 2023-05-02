@@ -6,13 +6,13 @@
 
 try { 
     
-    $vt_kullanici_adi="sql_injection";
-    $vt_sifre="contrafacil";
-    $vt_sunucu="localhost";
-    $vt_adi="sql_injection";
+    $db="sqli_union";
+    $db_pass="contrafacil";
+    $db_host="localhost";
+    $db_user="sqli_or";
 
 
-    $mysqli = new mysqli($vt_sunucu,$vt_kullanici_adi,$vt_sifre,$vt_adi);
+    $mysqli = new mysqli($db_host,$db_user,$db_pass,$db);
     mysqli_set_charset($mysqli,"utf8");
     mysqli_error ( $mysqli);
 
@@ -20,7 +20,7 @@ try {
     
 } catch (PDOException $e) {
     
-    echo 'Veri tabanı bağlantı hatası: '.$e;
+    echo 'Error al conectar con la DB '.$e;
 
 }
 ?>
