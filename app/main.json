@@ -188,7 +188,7 @@
             {
                 "id": 2,
                 "title": {
-                    "en": "Find the Passwords",
+                    "en": "SQLi Union",
                     "tr": "Şifreleri Bul",
                     "fr": "Rechercher un enregistrement",
                     "ar": ""
@@ -199,7 +199,7 @@
                     "fr": "Accéder aux enregistrements de la base de données",
                     "ar": ""
                 },
-                "url": "/lab/sql-injection/find-password/",
+                "url": "/lab/sql-injection/sqli-union/",
                 "vulnID": 2
             },
             {

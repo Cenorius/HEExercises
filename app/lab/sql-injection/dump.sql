@@ -13,20 +13,6 @@ START TRANSACTION;
 SET time_zone = "+00:00";
 
 
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
---
--- Veritabanı: `sql_injection`
---
-
--- --------------------------------------------------------
-
---
--- Tablo için tablo yapısı `images`
---
 
 DROP TABLE IF EXISTS `stocks`;
 CREATE TABLE IF NOT EXISTS `stocks` (
@@ -35,9 +21,7 @@ CREATE TABLE IF NOT EXISTS `stocks` (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
 
---
--- Tablo döküm verisi `images`
---
+
 
 INSERT INTO `stocks` (`id`, `name`) VALUES
 (1, 'iphone11'),
@@ -45,11 +29,7 @@ INSERT INTO `stocks` (`id`, `name`) VALUES
 (3, 'iphone13'),
 (4, 'iphonese'),
 (5, 'apple20w');
--- --------------------------------------------------------
 
---
--- Tablo için tablo yapısı `images`
---
 
 DROP TABLE IF EXISTS `images`;
 CREATE TABLE IF NOT EXISTS `images` (
@@ -58,9 +38,6 @@ CREATE TABLE IF NOT EXISTS `images` (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
 
---
--- Tablo döküm verisi `images`
---
 
 INSERT INTO `images` (`id`, `path`) VALUES
 (1, 'images/1.png'),
@@ -75,11 +52,7 @@ INSERT INTO `images` (`id`, `path`) VALUES
 (10, 'images/10.png');
 
 
--- --------------------------------------------------------
 
---
--- Tablo için tablo yapısı `users`
---
 
 DROP TABLE IF EXISTS `users`;
 CREATE TABLE IF NOT EXISTS `users` (
@@ -92,9 +65,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4;
 
---
--- Tablo döküm verisi `users`
---
+
 
 INSERT INTO `users` (`id`, `username`, `email`, `password`, `name`, `surname`) VALUES
 (1, 'angelo12', 'ephraim_frits@supermail.com', 'ii7phaufuGah', 'Angelo', 'Williams'),
