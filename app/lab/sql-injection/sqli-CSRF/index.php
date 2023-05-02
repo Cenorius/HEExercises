@@ -10,7 +10,7 @@ $strings = tr();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
-    <title> <?php echo $strings['kayit'] ?> </title>
+    <title> SQLi CSRF </title>
     <style>
       body {
         margin: 0;
@@ -41,29 +41,37 @@ $strings = tr();
     include('dependencies/dbConnect.php');   
 
     global $mysqli;
+    session_start();
 
 ?> 
     <main>
       <div class="" style="padding: 60px;">
         <div class="container-fluid">
-          <h1 class="mt-4"><?php echo $strings['kayit'] ?></h1>
+          <h1 class="mt-4">Datos de la panda</h1>
         
-    <div class="form-group">
-      <span></span>
-    </div>
+   
     <div class="row">
-      <div class="col-4">
-        <form method="GET">
-          <input type="text"placeholder="Search" value="" name="search" >
-          <button class="btn btn-primary" type="submit"> <?php echo $strings['search'] ?> </button>
+      
+        <form class="form-inline" method="POST">
+        
+        <?php
+          $lastToken=$_SESSION['token'];
+          
+          $_SESSION['token'] = md5(uniqid(mt_rand(), true));
+          echo '<input type="hidden" name="tokenDecorativo" value="'.$_SESSION['token'].'">';
+        ?>
+
+        <select class="form-select w-auto d-inline" name="col">
+            <option>Selecciona un campo</option>
+            <option>id</option>
+            <option>Username</option>
+            <option>EMail</option>
+            <option>Name</option>
+            <option>Surname</option>
+        </select>
+          <button class="btn btn-primary" type="submit"> Sort </button>
         </form>
-      </div>
-      <div class="col-8">
-        <form method="GET">
-          <button class="btn btn-primary" type="submit" style="margin-left:-90px"><?php echo $strings['reset'] ?></button>         
-          <!-- <input placeholder="Delete" style="display:none" value="1" name="delete"> -->
-        </form>
-      </div>
+      
     </div>
     <div class="">
       <fieldset>
@@ -73,7 +81,6 @@ $strings = tr();
               <table class="table table-striped table-hover" id="dataTable" width="100%" cellspacing="0">
                 <thead>
                   <tr>
-                    <th>ID</th>
                     <th>Username</th>
                     <th>E-Mail</th>
                     <th>Name</th>
@@ -83,18 +90,33 @@ $strings = tr();
                 </thead>
                 <tbody> <?php
 
+                                            
+                                            $param=$_POST['col'];
+                                            $token = filter_input(INPUT_POST, 'tokenDecorativo', FILTER_SANITIZE_STRING);
 
-                                        
-                                            if(isset($_GET['search']) and $_GET['search'] != "" )
+                                            if(isset($param) and $param != "")
                                             {
-                                                $query = $mysqli->query("SELECT * FROM users WHERE 
-                                                name LIKE '%" . $_GET['search'] . "%'");
+                                              
+                                              if(!$token || $token!==$lastToken){
+                                                echo "<p>CSRF no valido<p>";
+                                                echo "<p>Actual: ". $token." Esperado:".$lastToken."<p>";
+                                                header($_SERVER['SERVER_PROTOCOL'] . ' CSRF no validado');
+                                                exit;
+                                              }
+                                              
+                                              $param=strtolower($param);
+                                              
+                                              //if(str_contains($param,"and") or str_contains($param,"union") or str_contains($param,"delay"))
+                                               // exit();
+
+                                               $query = $mysqli->query("SELECT * FROM users WHERE ".$param."= (SELECT ".$param." FROM users ORDER BY ".$param." LIMIT 1)") ;
+                                                
+                                                
                                                 while($list = $query->fetch_array())
                                                 {
                                                     echo '
                                                     
 																<tr>
-																	<td>'.$list['id'].'</td>
 																	<td>'.$list['username'].'</td>
 																	<td>'.$list['email'].'</td>
 																	<td>'.$list['name'].'</td>
@@ -112,7 +134,6 @@ $strings = tr();
                                                     echo '
                                                     
 																<tr>
-																	<td>'.$list['id'].'</td>
 																	<td>'.$list['username'].'</td>
 																	<td>'.$list['email'].'</td>
 																	<td>'.$list['name'].'</td>

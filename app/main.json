@@ -290,35 +290,35 @@
             {
                 "id": 8,
                 "title": {
-                    "en": "Find the Passwords case 2",
+                    "en": "SQLi CSRF",
                     "tr": "Şifreleri Bul",
                     "fr": "Rechercher un enregistrement",
                     "ar": ""
                 },
                 "description": {
-                    "en": "Access the passwords in the Database.",
+                    "en": "Encuentra la flag lidiando con el CSRF",
                     "tr": "Veri Tabanında bulunan şifrelere erişiniz.",
                     "fr": "Accéder aux enregistrements de la base de données",
                     "ar": ""
                 },
-                "url": "/lab/sql-injection/find-password-7-CSRF/",
+                "url": "/lab/sql-injection/sqli-CSRF/",
                 "vulnID": 2
             },
             {
                 "id": 9,
                 "title": {
-                    "en": "Find the Passwords case 2",
+                    "en": "SQLi OS",
                     "tr": "Şifreleri Bul",
                     "fr": "Rechercher un enregistrement",
                     "ar": ""
                 },
                 "description": {
-                    "en": "Access the passwords in the Database.",
+                    "en": "Levanta una shell y encuentra la flag en el sistema objetivo",
                     "tr": "Veri Tabanında bulunan şifrelere erişiniz.",
                     "fr": "Accéder aux enregistrements de la base de données",
                     "ar": ""
                 },
-                "url": "/lab/sql-injection/find-password-7-CSRF/",
+                "url": "/lab/sql-injection/sqli-os/",
                 "vulnID": 2
             },
             {
