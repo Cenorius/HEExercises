@@ -53,13 +53,13 @@ $strings = tr();
       
         <form class="form-inline" method="GET">
           <select class="form-select w-auto d-inline" name="col">
-            <option>Selecciona un campo</option>
+            <option value="">Selecciona un campo</option>
             <option>Username</option>
             <option>EMail</option>
             <option>Name</option>
             <option>Surname</option>
         </select>
-          <button class="btn btn-primary" type="submit"> Sort </button>
+          <button class="btn btn-primary" type="submit"> Máximos </button>
         </form>
       
     </div>
@@ -90,6 +90,7 @@ $strings = tr();
                                                // exit();
 
                                               $query = $mysqli->query("SELECT * FROM users WHERE (`".$param."`)= (SELECT `".$param."` FROM users ORDER BY ".$param." LIMIT 1)") ;
+                                              //$query = $mysqli->query("SELECT * FROM users order by (`".$param."`)") ;
                                                 
                                                 
                                                 while($list = $query->fetch_array())
