@@ -161,7 +161,7 @@
             "ar": ""
         },
         "description": {
-            "en": "It is an attack technique used to attack database-based applications; where the attacker takes advantage of SQL language features and adds new SQL statements to the corresponding field on the standard application screen.",
+            "en": "Ataque de inyección contra una base de datos SQL",
             "tr": "Veri tabanına dayalı uygulamalara saldırmak için kullanılan bir atak tekniğidir; burada saldırgan SQL dili özelliklerinden faydalanarak standart uygulama ekranındaki ilgili alana yeni SQL ifadelerini ekler.",
             "fr": "Il s'agit d'une technique d'attaque utilisée pour attaquer les applications basées sur des bases de données ; où l'attaquant tire parti des fonctionnalités du langage SQL et ajoute de nouvelles instructions SQL au champ correspondant sur l'écran standard de l'application.",
             "ar": ""
