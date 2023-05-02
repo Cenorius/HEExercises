@@ -22,14 +22,16 @@ if(isset($_POST['username']) && isset($_POST['password']) ){
 	$usr=$_POST['username'];
 	$pwd=$_POST['password'];
 
-	$sql = "SELECT username,password FROM users WHERE username='" . $usr . "' AND password='" . $pwd . "'";
+	$sql = "SELECT username,password FROM users WHERE password='" . $pwd . "' AND username='" . $usr . "'";
 
 
 if ($result = $mysqli->query($sql)) {
-while($obj = $result->fetch_object()){
-	$_SESSION['username'] = $usr;
-	header("Location: admin.php");
+while($obj = $result->fetch_array()){
+	if($obj['username'] == $usr){
+		$_SESSION['username'] = $usr;
+		header("Location: admin.php");
 	exit;
+	}
 }
 }
 
