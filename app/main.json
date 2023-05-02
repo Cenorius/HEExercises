@@ -273,18 +273,18 @@
             {
                 "id": 7,
                 "title": {
-                    "en": "Find the Passwords case 2",
+                    "en": "SQLi boundaries",
                     "tr": "Şifreleri Bul",
                     "fr": "Rechercher un enregistrement",
                     "ar": ""
                 },
                 "description": {
-                    "en": "Access the passwords in the Database.",
+                    "en": "Encuentra la flag más alla de tus límites",
                     "tr": "Veri Tabanında bulunan şifrelere erişiniz.",
                     "fr": "Accéder aux enregistrements de la base de données",
                     "ar": ""
                 },
-                "url": "/lab/sql-injection/find-password-6-Boundaries/",
+                "url": "/lab/sql-injection/sqli-boundaries/",
                 "vulnID": 2
             },
             {
