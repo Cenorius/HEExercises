@@ -88,37 +88,27 @@ $strings = tr();
                                             {
                                                 $query = $mysqli->query("SELECT * FROM users WHERE 
                                                 name LIKE '%" . $_GET['search'] . "%'");
-                                                while($list = $query->fetch_array())
-                                                {
-                                                    echo '
-                                                    
-																<tr>
-																	<td>'.$list['username'].'</td>
-																	<td>'.$list['email'].'</td>
-																	<td>'.$list['name'].'</td>
-                                  <td>'.$list['surname'].'</td>
-																</tr>
-                                                    ';
-                                                }
+                                            
                                             }
                                             else
                                             {
                                               $query = $mysqli->query("SELECT * FROM users ");
-                                                while($list = $query->fetch_array())
+                                                
+                                                
+                                            }
+
+                                            while($list = $query->fetch_array())
                                                 {
                                                     echo '
                                                     
-																<tr>
-																	<td>'.$list['username'].'</td>
-																	<td>'.$list['email'].'</td>
-																	<td>'.$list['name'].'</td>
-                                  <td>'.$list['surname'].'</td>
-                                  
-																</tr>
+                                                        <tr>
+                                                          <td>'.$list['username'].'</td>
+                                                          <td>'.$list['email'].'</td>
+                                                          <td>'.$list['name'].'</td>
+                                                          <td>'.$list['surname'].'</td>
+                                                        </tr>
                                                     ';
                                                 }
-                                                
-                                            }
                                         ?> </tbody>
               </table>
             </div>

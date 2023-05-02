@@ -3,12 +3,13 @@ require("../../../lang/lang.php");
 $strings = tr();
 
 $name="name";
-$value="angelo";
-
-setcookie(
-  $name,
-  $value,
-);
+$value="nathan";
+if(!isset($_COOKIE['name'])){
+  setcookie(
+    $name,
+    $value,
+  );
+}
 ?>
 
 <!DOCTYPE html>
@@ -33,7 +34,7 @@ setcookie(
     </style>
   </head>
   <body>
-    <script id="VLBar" title="<?= $strings['kayit'] ?>" category-id="2" src="/public/assets/js/vlnav.min.js"></script>
+    <script id="VLBar" title="<?= $strings['kayit'] ?>" category-id="2" src="/public/assets/js/vlnav.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> <?php
@@ -54,24 +55,13 @@ setcookie(
     <main>
       <div class="" style="padding: 60px;">
         <div class="container-fluid">
-          <h1 class="mt-4"><?php echo $strings['kayit'] ?></h1>
+          <h1 class="mt-4">SQLi Cookie</h1>
         
     <div class="form-group">
       <span></span>
     </div>
     <div class="row">
-      <div class="col-4">
-        <form method="GET">
-          <input type="text"placeholder="Search" value="" name="search" >
-          <button class="btn btn-primary" type="submit"> <?php echo $strings['search'] ?> </button>
-        </form>
-      </div>
-      <div class="col-8">
-        <form method="GET">
-          <button class="btn btn-primary" type="submit" style="margin-left:-90px"><?php echo $strings['reset'] ?></button>         
-          <!-- <input placeholder="Delete" style="display:none" value="1" name="delete"> -->
-        </form>
-      </div>
+     
     </div>
     <div class="">
       <fieldset>
@@ -81,7 +71,6 @@ setcookie(
               <table class="table table-striped table-hover" id="dataTable" width="100%" cellspacing="0">
                 <thead>
                   <tr>
-                    <th>ID</th>
                     <th>Username</th>
                     <th>E-Mail</th>
                     <th>Name</th>
@@ -102,7 +91,6 @@ setcookie(
                                                     echo '
                                                     
 																<tr>
-																	<td>'.$list['id'].'</td>
 																	<td>'.$list['username'].'</td>
 																	<td>'.$list['email'].'</td>
 																	<td>'.$list['name'].'</td>

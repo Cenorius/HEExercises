@@ -177,7 +177,7 @@
                     "ar": ""
                 },
                 "description": {
-                    "en": "Try to login to the system.",
+                    "en": "Intenta hacer login en el sistema.",
                     "tr": "Sisteme giriş yapmayı deneyiniz.",
                     "fr": "Essayez de vous connecter au système.",
                     "ar": ""
@@ -194,7 +194,7 @@
                     "ar": ""
                 },
                 "description": {
-                    "en": "Access the passwords in the Database.",
+                    "en": "Busca la flag.",
                     "tr": "Veri Tabanında bulunan şifrelere erişiniz.",
                     "fr": "Accéder aux enregistrements de la base de données",
                     "ar": ""
@@ -205,18 +205,18 @@
             {
                 "id": 3,
                 "title": {
-                    "en": "Find the Passwords case 2",
+                    "en": "SQLi Union caso 2",
                     "tr": "Şifreleri Bul",
                     "fr": "Rechercher un enregistrement",
                     "ar": ""
                 },
                 "description": {
-                    "en": "Access the passwords in the Database.",
+                    "en": "Busca la flag.",
                     "tr": "Veri Tabanında bulunan şifrelere erişiniz.",
                     "fr": "Accéder aux enregistrements de la base de données",
                     "ar": ""
                 },
-                "url": "/lab/sql-injection/find-password-2-Post/",
+                "url": "/lab/sql-injection/sqli-union-post/",
                 "vulnID": 2
             },
             {
