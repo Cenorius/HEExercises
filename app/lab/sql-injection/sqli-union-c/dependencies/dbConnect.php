@@ -9,7 +9,7 @@ try {
     $db="sqli_union";
     $db_pass="contrafacil";
     $db_host="localhost";
-    $db_user="sqli_union";
+    $db_user="sqli_cookie";
 
 
     $mysqli = new mysqli($db_host,$db_user,$db_pass,$db);

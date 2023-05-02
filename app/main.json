@@ -222,18 +222,18 @@
             {
                 "id": 4,
                 "title": {
-                    "en": "Find the Passwords case 2",
+                    "en": "SQLi Union caso 3",
                     "tr": "Şifreleri Bul",
                     "fr": "Rechercher un enregistrement",
                     "ar": ""
                 },
                 "description": {
-                    "en": "Access the passwords in the Database.",
+                    "en": "Busca la flag.",
                     "tr": "Veri Tabanında bulunan şifrelere erişiniz.",
                     "fr": "Accéder aux enregistrements de la base de données",
                     "ar": ""
                 },
-                "url": "/lab/sql-injection/find-password-3-Cookie/",
+                "url": "/lab/sql-injection/sqli-union-c/",
                 "vulnID": 2
             },
             {

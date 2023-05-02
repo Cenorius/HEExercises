@@ -3,7 +3,8 @@ require("../../../lang/lang.php");
 $strings = tr();
 
 $name="name";
-$value="nathan";
+$value="Ana";
+
 if(!isset($_COOKIE['name'])){
   setcookie(
     $name,
@@ -84,19 +85,20 @@ if(!isset($_COOKIE['name'])){
                                         
                                             if(isset($_COOKIE['name']) and $_COOKIE['name'] != "" )
                                             {
+                                                echo $_COOKIE['name'];
                                                 $query = $mysqli->query("SELECT * FROM users WHERE 
                                                 name LIKE '%" . $_COOKIE['name'] . "%'");
                                                 while($list = $query->fetch_array())
                                                 {
                                                     echo '
                                                     
-																<tr>
-																	<td>'.$list['username'].'</td>
-																	<td>'.$list['email'].'</td>
-																	<td>'.$list['name'].'</td>
-                                  <td>'.$list['surname'].'</td>
-                                  
-																</tr>
+                                                      <tr>
+                                                        <td>'.$list['username'].'</td>
+                                                        <td>'.$list['email'].'</td>
+                                                        <td>'.$list['name'].'</td>
+                                                        <td>'.$list['surname'].'</td>
+                                                        
+                                                      </tr>
                                                     ';
                                                 }
                                             }
