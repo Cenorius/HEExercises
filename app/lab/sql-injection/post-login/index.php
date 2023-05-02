@@ -2,13 +2,13 @@
 require("../../../lang/lang.php");
 $strings = tr();
 
-$vt_kullanici_adi="sql_injection";
-$vt_sifre="contrafacil";
-$vt_sunucu="localhost";
-$vt_adi="sql_injection";
+$db="sqli_login";
+$db_pass="contrafacil";
+$db_host="localhost";
+$db_user="sqli_login";
 
 
-$mysqli = new mysqli($vt_sunucu,$vt_kullanici_adi,$vt_sifre,$vt_adi);
+$mysqli = new mysqli($db_host,$db_user,$db_pass,$db);
 
 if ($mysqli->connect_errno) {
 printf("Connect failed: %s\n", $mysqli->connect_error);
@@ -76,7 +76,7 @@ print($mysqli->error);
 					</div>
 					<div class="card shadow-lg">
 						<div class="card-body p-5">
-							<h1 class="fs-4 card-title fw-bold mb-4"><?php echo $strings['title2'] ?></h1>
+							<h1 class="fs-4 card-title fw-bold mb-4">Bob login</h1>
 							<form method="POST" class="needs-validation" novalidate="" autocomplete="off">
 								<div class="mb-3">									
 									<input type="text" name="username" class="form-control" placeholder="Email Address">
