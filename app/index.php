@@ -23,7 +23,7 @@ $data = json_decode($Raw_Json,true);
       <section id="labs">
         <div class="container">
           <h1 class="display-6 fw-semi-bold"> <?php echo $tr["vulns"]; ?></h1>
-          <p class="fs-2"><?php echo $tr["description"]; ?></p>
+          <p class="fs-2">Laboratorio de Bob</p>
 
           <div class="row mb-4 mt-6">
           <?php foreach ($data as $key=> $val) { ?>
