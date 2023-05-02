@@ -74,7 +74,7 @@ echo 'secure_file_priv="/var/www/html/carpetaSecreta/"' >> /etc/mysql/my.cnf
 
 mysql -u root -e "CREATE DATABASE sql_injection"
 
-mysql -u root sql_injection < /var/www/html/lab/sql-injection/dump.sql
+mysql -u root -p dump_completo.sql
 mysql -u root -e "CREATE USER'sql_injection'@'localhost' IDENTIFIED BY 'contrafacil';"
 mysql -u root -e "GRANT ALL PRIVILEGES ON * . * TO 'sql_injection'@'localhost';"
 
