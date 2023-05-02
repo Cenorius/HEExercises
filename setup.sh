@@ -30,7 +30,7 @@ chown -R www-data:www-data /var/www/html
 rm /var/www/html/index.html
 cp -R app/* /var/www/html/
 
-mysql -u root -p < dump_completo.sql
+mysql -u root < dump_completo.sql
 
 mysql -u root -e "CREATE DATABASE sqli_login"
 mysql -u root -e "CREATE USER'sqli_login'@'localhost' IDENTIFIED BY 'contrafacil';"
