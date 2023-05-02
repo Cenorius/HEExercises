@@ -56,7 +56,7 @@ if(!isset($_COOKIE['name'])){
     <main>
       <div class="" style="padding: 60px;">
         <div class="container-fluid">
-          <h1 class="mt-4">SQLi Cookie</h1>
+          <h1 class="mt-4">Datos de la panda</h1>
         
     <div class="form-group">
       <span></span>

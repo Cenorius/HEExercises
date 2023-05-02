@@ -55,7 +55,7 @@ $strings = tr();
       <div class="col-4">
         <form method="GET">
           <input type="text"placeholder="Search" value="" name="search" >
-          <button class="btn btn-primary" type="submit"> <?php echo $strings['search'] ?> </button>
+          <button class="btn btn-primary" type="submit"> Buscar </button>
         </form>
       </div>
       <div class="col-8">
@@ -101,7 +101,6 @@ $strings = tr();
                                                     echo '
                                                     
 																<tr>
-																	<td>'.$list['id'].'</td>
 																	<td>'.$list['username'].'</td>
 																	<td>'.$list['email'].'</td>
 																	<td>'.$list['name'].'</td>
@@ -119,7 +118,6 @@ $strings = tr();
                                                     echo '
                                                     
 																<tr>
-																	<td>'.$list['id'].'</td>
 																	<td>'.$list['username'].'</td>
 																	<td>'.$list['email'].'</td>
 																	<td>'.$list['name'].'</td>

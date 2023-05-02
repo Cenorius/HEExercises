@@ -53,7 +53,7 @@ if( empty(file_get_contents("php://input"))){
     <main>
       <div class="" style="padding: 60px;">
         <div class="container-fluid">
-          <h1 class="mt-4"><?php echo $strings['kayit'] ?></h1>
+          <h1 class="mt-4">Datos de la panda</h1>
         
     <div class="form-group">
       <span></span>
