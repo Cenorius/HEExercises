@@ -79,7 +79,7 @@ print($mysqli->error);
 							<h1 class="fs-4 card-title fw-bold mb-4">Bob login</h1>
 							<form method="POST" class="needs-validation" novalidate="" autocomplete="off">
 								<div class="mb-3">									
-									<input type="text" name="username" class="form-control" placeholder="Email Address">
+									<input type="text" name="username" class="form-control" placeholder="User">
 								</div>
 									<div class="mb-3">
 									<div class="mb-2 w-100">									
