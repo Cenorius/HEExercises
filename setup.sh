@@ -70,12 +70,13 @@ mysql -u root -e "CREATE USER'sqli_os'@'localhost' IDENTIFIED BY 'contrafacil';"
 mysql -u root -e "GRANT SELECT ON sqli_union.users  TO 'sqli_os'@'localhost';"
 mysql -u root -e "GRANT FILE ON sqli_union.users  TO 'sqli_os'@'localhost';"
 
-echo '[mysqld]' >> /etc/mysql/my.cnf
-echo 'secure_file_priv="/var/www/html/carpetaSecreta/"' >> /etc/mysql/my.cnf
+#echo '[mysqld]' >> /etc/mysql/my.cnf
+#echo 'secure_file_priv="/var/www/html/carpetaSecreta/"' >> /etc/mysql/my.cnf
 
 mysql -u root -e "CREATE USER'sql_injection'@'localhost' IDENTIFIED BY 'contrafacil';"
 mysql -u root -e "GRANT ALL PRIVILEGES ON * . * TO 'sql_injection'@'localhost';"
 
+mysql -u root -e "FLUSH PRIVILEGES;"
 
 #<directory /var/www/html>
 #                RewriteEngine  on
