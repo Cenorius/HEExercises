@@ -213,7 +213,7 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/Chat.js"></script>
     <script src="assets/js/app.js"></script>
-    <script id="VLBar" title="<?= $strings['title']; ?>" category-id="8" src="/public/assets/js/vlnav.min.js"></script>
+    <script id="VLBar" title="<?= $strings['title']; ?>" category-id="8" src="/public/assets/js/vlnav.js"></script>
     
 </body>
 

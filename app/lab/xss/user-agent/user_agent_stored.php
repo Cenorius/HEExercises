@@ -37,6 +37,26 @@ $q->execute(array(
     <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
 
     <title><?php echo $strings['title']; ?></title>
+    <script src="../../../node_modules/sql.js/dist/sql-wasm.js"></script>
+    <script async>  
+
+
+        async function getDB(){
+            debugger;
+            const sqlPromise = initSqlJs({
+                locateFile: file => "../../../node_modules/sql.js/dist/sql-wasm.wasm"
+            });
+            const dataPromise = fetch("database.db").then(res => res.arrayBuffer());
+
+            const [SQL, buf]=await Promise.all([sqlPromise, dataPromise]);
+            
+            const db = new SQL.Database(new Uint8Array(buf));
+            return db;
+        }
+        const DBpromise=getDB();
+        
+        
+    </script>
 </head>
 
 <body>
@@ -99,7 +119,7 @@ $q->execute(array(
 
         </div>
     </div>
-    <script id="VLBar" title="<?= $strings['title'] ?>" category-id="1" src="/public/assets/js/vlnav.min.js"></script>
+    <script id="VLBar" title="<?= $strings['title'] ?>" category-id="1" src="/public/assets/js/vlnav.js"></script>
 </body>
 
 </html>
