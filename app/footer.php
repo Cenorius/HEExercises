@@ -3,12 +3,12 @@
 
 <!--    End of Main Content-->
 <!-- <section> begin ============================-->
-<footer class="row footer">
+<!--<footer class="row footer">
     <div class="col">
 
     </div>
 
-</footer>
+</footer>-->
 <!-- <section> close ============================-->
 
 <!--    JavaScripts START-->
