@@ -34,7 +34,7 @@ $strings = tr();
         </div>
     </div>
     <a href="index.php" style="margin: 0px 0px 15px 15px;"><button type="button" class="btn btn-success " style="margin-top: 10px;"><?php echo $strings['back']; ?></button></a>
-    <script id="VLBar" title="<?= $strings['title'] ?>" category-id="1" src="/public/assets/js/vlnav.min.js"></script>
+    <script id="VLBar" title="<?= $strings['title'] ?>" category-id="1" src="/public/assets/js/vlnav.js"></script>
 </body>
 
 </html>

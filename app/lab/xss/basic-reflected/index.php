@@ -38,7 +38,7 @@ $strings = tr();
 
   </div>
 
-  <script id="VLBar" title="<?= $strings['title'] ?>" category-id="1" src="/public/assets/js/vlnav.min.js"></script>
+  <script id="VLBar" title="<?= $strings['title'] ?>" category-id="1" src="/public/assets/js/vlnav.js"></script>
 
 </body>
 
