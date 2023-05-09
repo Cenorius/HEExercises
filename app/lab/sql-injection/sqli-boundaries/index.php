@@ -88,7 +88,8 @@ $strings = tr();
                                               
                                               //if(str_contains($param,"and") or str_contains($param,"union") or str_contains($param,"delay"))
                                                // exit();
-
+                                              try{
+                                              
                                               $query = $mysqli->query("SELECT * FROM users WHERE (`".$param."`)= (SELECT `".$param."` FROM users ORDER BY ".$param." LIMIT 1)") ;
                                               //$query = $mysqli->query("SELECT * FROM users order by (`".$param."`)") ;
                                                 
@@ -106,6 +107,11 @@ $strings = tr();
                                                             </tr>
                                                     ';
                                                 }
+                                              }
+                                              catch(Exception $e){
+                                                
+                                                echo "<div hidden>".$mysqli->error."<div>";
+                                              }
                                             }
                                             else
                                             {
@@ -125,6 +131,9 @@ $strings = tr();
                                                 }
                                                 
                                             }
+                                          
+                                        
+                                          
                                         ?> </tbody>
               </table>
             </div>
